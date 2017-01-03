@@ -388,12 +388,12 @@
 					};
 					8F2B8D631B07A92C0063EB9C = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					8F2B8D6E1B07A92C0063EB9C = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};

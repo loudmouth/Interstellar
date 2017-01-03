@@ -38,7 +38,7 @@ public struct ObservingOptions: OptionSet {
 public final class Observable<T> {
     fileprivate typealias Observer = (T)->Void
     fileprivate var observers = [ObserverToken: Observer]()
-    public private(set) var value: T?
+    public fileprivate(set) var value: T?
     public let options: ObservingOptions
     fileprivate let mutex = Mutex()
     

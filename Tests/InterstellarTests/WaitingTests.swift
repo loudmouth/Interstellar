@@ -11,11 +11,11 @@ import XCTest
 import Interstellar
 import Dispatch
 
-fileprivate func asyncOperation(value: String, completion: (Result<String>)->Void) {
+fileprivate func asyncOperation(_ value: String, completion: (Result<String>)->Void) {
     completion(Result<String>.success(value))
 }
 
-fileprivate func longOperation(value: String, completion: @escaping (Result<String>)->Void) {
+fileprivate func longOperation(_ value: String, completion: @escaping (Result<String>)->Void) {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 10){
         completion(Result<String>.success(value))
     }
